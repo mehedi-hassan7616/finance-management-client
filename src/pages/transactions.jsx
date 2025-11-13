@@ -61,7 +61,6 @@ import { LoadingSpinner } from "@/components/ui/spinner";
 import { cn } from "@/lib/utils";
 import { API_URL } from "@/lib/constant";
 import { useQuery } from "@tanstack/react-query";
-// import TransactionDetailsPage from "./transaction-details";
 
 const categories = {
   income: ["Salary", "Freelance", "Investment", "Business", "Other"],
