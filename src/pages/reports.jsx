@@ -85,11 +85,9 @@ export default function ReportsPage() {
   const totalExpenses = summary.totalExpenses;
   const netBalance = summary.netBalance;
 
-  // Income and expense colors with theme support
   const incomeColor = "hsl(142, 71%, 45%)"; // Green
   const expenseColor = "hsl(0, 84%, 60%)"; // Red
 
-  // Prepare data for pie chart
   const pieChartData = useMemo(() => {
     return categoryData.map((item, index) => ({
       ...item,
@@ -97,7 +95,6 @@ export default function ReportsPage() {
     }));
   }, [categoryData]);
 
-  // Chart configuration
   const chartConfig = useMemo(() => {
     const config = {};
     categoryData.forEach((item, index) => {
