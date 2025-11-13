@@ -495,12 +495,8 @@ export default function TransactionsPage() {
               >
                 Cancel
               </Button>
-              <Button
-                type="submit"
-                // disabled={loading}
-              >
-                {/* {loading ? "Updating..." : "Update Transaction"} */}
-                Update Transaction
+              <Button type="submit" disabled={isTransactionLoading}>
+                {isTransactionLoading ? "Updating..." : "Update Transaction"}
               </Button>
             </DialogFooter>
           </form>
