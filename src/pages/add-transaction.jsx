@@ -100,7 +100,7 @@ export default function AddTransactionPage() {
   const handleSelectChange = (name, value) => {
     setFormData((prev) => {
       const updated = { ...prev, [name]: value };
-      // Reset category when type changes
+
       if (name === "type") {
         updated.category = "";
       }
