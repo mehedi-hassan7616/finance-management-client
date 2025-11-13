@@ -148,7 +148,7 @@ export default function TransactionsPage() {
         },
       });
       refetch();
-      // Need to implement update logic
+
       toast.success("Transaction updated successfully!");
       setUpdateDialogOpen(false);
       setUpdateFormData({
