@@ -525,11 +525,10 @@ export default function TransactionsPage() {
             </AlertDialogCancel>
             <AlertDialogAction
               onClick={handleDelete}
-              // disabled={loading}
+              disabled={isTransactionLoading}
               className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
             >
-              {/* {loading ? "Deleting..." : "Delete"} */}
-              Delete
+              {isTransactionLoading ? "Deleting..." : "Delete"}
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
