@@ -65,7 +65,6 @@ export default function AddTransactionPage() {
     setLoading(true);
 
     try {
-      // TODO: Implement transaction submission to MongoDB
       const transactionData = {
         type: formData.type,
         amount: parseFloat(formData.amount),
