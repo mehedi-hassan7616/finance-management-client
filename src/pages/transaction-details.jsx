@@ -110,7 +110,7 @@ export default function TransactionDetailsPage() {
                     : "text-red-600"
                 }`}
               >
-                {transaction.type === "income" ? "+" : "-"}$
+                {transaction.type === "income" ? "+" : "-"}BDT{" "}
                 {parseFloat(transaction.amount).toFixed(2)}
               </p>
             </div>
